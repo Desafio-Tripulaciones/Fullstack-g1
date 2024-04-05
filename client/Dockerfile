@@ -7,7 +7,7 @@ ENV port=5173
 WORKDIR /client
 
 # Copiar el código del cliente al directorio de trabajo
-COPY ./client ./client
+COPY . ./client
 
 # Instalar las dependencias del cliente
 RUN cd client && npm install
